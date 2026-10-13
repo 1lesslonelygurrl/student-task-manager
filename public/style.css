@@ -1,0 +1,179 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f5f5fc;
+  color: #252544;
+  line-height: 1.6;
+}
+
+.container {
+  width: min(760px, 92%);
+  margin: 45px auto;
+}
+
+header {
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  color: #6c5ce7;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+h1 {
+  margin: 6px 0;
+  font-size: clamp(28px, 5vw, 38px);
+  line-height: 1.2;
+}
+
+.subtitle {
+  color: #77778d;
+}
+
+.panel {
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #eae9f5;
+  border-radius: 18px;
+  box-shadow: 0 8px 28px rgba(45, 39, 90, 0.06);
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+label {
+  display: block;
+  margin: 18px 0 7px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #deddeb;
+  border-radius: 9px;
+  background: #fff;
+  color: #252544;
+  font: inherit;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #c8c0ff;
+  border-color: #6c5ce7;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+button,
+select {
+  padding: 10px 14px;
+  border: 1px solid #deddeb;
+  border-radius: 9px;
+  font: inherit;
+  cursor: pointer;
+}
+
+form button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 13px;
+  background: #6c5ce7;
+  border-color: #6c5ce7;
+  color: white;
+  font-weight: 700;
+}
+
+button:hover {
+  filter: brightness(0.95);
+}
+
+#message {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.tasks-section {
+  margin-top: 35px;
+}
+
+.section-heading,
+.task-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+#task-count {
+  padding: 4px 12px;
+  background: #e9e5ff;
+  color: #5948cb;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.task-card {
+  margin-bottom: 14px;
+  padding: 22px;
+  background: #fff;
+  border: 1px solid #eae9f5;
+  border-radius: 14px;
+  box-shadow: 0 5px 18px rgba(45, 39, 90, 0.04);
+  overflow-wrap: anywhere;
+}
+
+.task-card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.task-card p {
+  color: #77778d;
+}
+
+.task-actions {
+  justify-content: flex-start;
+  margin-top: 16px;
+}
+
+.task-actions select {
+  background: #f5f3ff;
+  color: #5948cb;
+}
+
+.task-actions button {
+  background: #fff;
+}
+
+.task-actions button:last-child {
+  color: #d64545;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 25px auto;
+  }
+
+  .panel,
+  .task-card {
+    padding: 18px;
+  }
+}

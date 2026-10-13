@@ -1,0 +1,5 @@
+node_modules/
+server/tasks.db
+.vs/
+.DS_Store
+npm-debug.log*

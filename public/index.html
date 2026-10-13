@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <p class="eyebrow">STUDENT PRODUCTIVITY</p>
+      <h1>Student Task Manager</h1>
+      <p class="subtitle">Organize your assignments and deadlines</p>
+    </header>
+
+    <section class="panel">
+      <h2>Add a New Task</h2>
+      <form id="task-form">
+        <label for="title">Task title *</label>
+        <input id="title" name="title" required
+          placeholder="e.g. Complete Mini Project #2">
+
+        <label for="description">Description</label>
+        <textarea id="description" name="description"
+          placeholder="What do you need to do?"></textarea>
+
+        <label for="due_date">Due date</label>
+        <input id="due_date" name="due_date" type="date">
+
+        <button type="submit">+ Add Task</button>
+        <p id="message" role="status"></p>
+      </form>
+    </section>
+
+    <section class="tasks-section">
+      <div class="section-heading">
+        <h2>My Tasks</h2>
+        <span id="task-count">0 tasks</span>
+      </div>
+      <div id="task-list">
+        <p>Loading tasks...</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
